@@ -5,8 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids School</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    
+<body class="quicksand">
+    <header>
+
+        <!-- nav starts here -->
+
+        <nav class="nav-container flex">
+            <div class="logo flex">
+                <a href=""><img src="./assets/logo.png" alt=""></a>
+                <p class="school bold">SCHOOL</p>
+                <i class="fa-solid fa-bars" id="hamburger"></i>
+            </div>
+                <ul class="nav-title flex">
+                    <a href=""><li class="orange">Home</li></a>
+                    <a href=""><li class="skyblue">About</li></a>
+                    <a href=""><li class="paste">Facilities</li></a>
+                    <a href=""><li class="violet">Admission</li></a>
+                </ul>
+            <div class="contact">
+                <button class="btn-primary borderless">Contact</button>
+            </div>
+        </nav>
+
+        <!-- banner starts here  -->
+
+        <section class="banner-container center flex">
+            <div class="banner">
+                <h1 class="banner-title bold"> <span class="orange">Empowering <br> </span> students from small <br> age <span class="skyblue">towards vision</span></h1>
+                <p class="banner-description black small">With the courage, Confidence, Creativity and Compassion to make <br> their Unique Contribution in a Diverse and Dynamic World.</p>
+                <button class="banner-button borderless white small">Enroll Now</button>
+            </div>
+            <div class="hero-image">
+            <img src="./assets/hero-kids.png" alt="">
+            </div>
+        </section>
+
+        <!-- banner ends here -->
+
+    </header>
+
+    <main>
+        <!-- standard curriculum starts here -->
+
+        <section class="standard-container">
+            <h1 class="standard-title bold">Standard Curriculum</h1>
+            <div class="card-container grid">
+                <div class="card-1">
+                    <img src="./assets/kinder.png" alt="">
+                    <h3 class="bold large">Kinder (3-6) Years</h3>
+                    <p class="medium grey"> It's designed to stimulate a child's natural <br> curiosity and help them learn to <br> read, write, and solve problems.</p>
+                    <a href=""><p class="skyblue bold">Read More</p></a>
+                </div>
+                <div class="card-2">
+                    <img src="./assets/elementary.png" alt="">
+                    <h3 class="bold large">Elementary School</h3>
+                    <p class="medium grey"> It's focuses on guiding young students as <br> they gain confidence and agility in <br> reading, writing, listening and speaking.</p>
+                    <a href=""><p class="orange bold">Read More</p></a>
+                </div>
+                <div class="card-3">
+                    <img src="./assets/middle.png" alt="">
+                    <h3 class="bold large">Middle (10-16) Years</h3>
+                    <p class="medium grey"> The typical curriculum at both <br> the middle school and high school levels comprises English, mathematics, science.</p>
+                    <a href=""><p class="violet bold">Read More</p></a>
+                </div>
+            </div>
+            <div class="icon-box flex center">
+                <button class="icon borderless"> <i class="white fa-solid fa-less-than"></i> </button>
+                <button class="icon borderless"> <i class="white fa-solid fa-greater-than"></i> </button>
+            </div>
+        </section>
+
+        <!-- standard curriculum ends here -->
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
