@@ -5,12 +5,13 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 *{
     margin: 0;
     padding: 0;    
 }
+
 /* shared styles */
 
 .flex{
@@ -70,6 +71,7 @@ section{
 }
 
 /* layout */
+
 .center{
     justify-content: center;
     align-items: center;
@@ -195,7 +197,7 @@ a{
     transition: 0.3s;
     cursor: pointer;
 }
- .card-1:hover{
+.card-1:hover{
     transform: scale(1.05);
     background-color: rgb(222, 245, 255);
 }
@@ -208,7 +210,7 @@ a{
     transition: 0.3s;
     cursor: pointer;
 }
- .card-2:hover{
+.card-2:hover{
     transform: scale(1.05);
     background-color: rgb(255, 244, 220);
 }
@@ -221,7 +223,7 @@ a{
     transition: 0.3s;
     cursor: pointer;
 }
- .card-3:hover{
+.card-3:hover{
     transform: scale(1.05);
     background-color: rgb(242, 232, 255);
 }
@@ -345,6 +347,7 @@ a{
 .card-btn-4:hover{
     background-color: rgb(100, 64, 3);
 }
+
 /* footer styles */
 
 footer{
@@ -400,6 +403,7 @@ footer{
         border-bottom: 0.5px solid rgb(254, 163, 1);
         margin-bottom: 8px;
     }
+
     /* banner  */
 
     .banner-container{
@@ -418,6 +422,9 @@ footer{
     }
     .hero-image{
         width: 100%;
+    }
+    .offer-container {
+        margin-bottom: 3rem;
     }
 
     /* standard */
@@ -444,6 +451,7 @@ footer{
     }
     .cards-container{
         margin: 1.25rem 1rem;
+        margin-top: 2rem;
     }
     .stories-cards-container{
         grid-template-columns: repeat(2, 1fr);
@@ -484,6 +492,9 @@ footer{
 }
 
 @media screen and (max-width:445px) {
+
+    /* stories  */
+
     .card-btn-1, .card-btn-2, .card-btn-3{
         width: 150px;
         padding: 6px;
@@ -505,6 +516,9 @@ footer{
     }
 }
 @media screen and (max-width:400px) {
+
+    /* stories  */
+
     .card-btn-1, .card-btn-2, .card-btn-3{
         width: 140px;
         padding: 6px;
