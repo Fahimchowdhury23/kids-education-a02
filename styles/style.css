@@ -6,10 +6,10 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 /* shared styles */
 
@@ -121,6 +121,12 @@ a{
     border-radius: 12px;
     font-size: 1.25rem;
     font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: rgba(73, 48, 5, 0.8);
 }
 
  /* banner styles */
@@ -129,7 +135,7 @@ a{
     height:auto;
     gap: 3rem;
 }
- .banner-title{
+.banner-title{
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
  }
@@ -142,13 +148,29 @@ a{
     background: rgb(17, 17, 17);
     width: 200px;
     height: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.black-button:hover{
+    background-color: rgba(5, 5, 5, 0.364);
+}
+.hero-image{
+    width: 100%;
 }
 .offer-container{
     margin-top: 3rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.offer-container:hover{
+    transform: scale(1.1);
 }
 .offer{
+    border: 3px solid rgb(254, 163, 1);
     background-color: rgb(1, 172, 253);
+    padding: .6rem;
 }
+
 /* standard curriculum styles */
 
 .standard-container{
@@ -170,6 +192,12 @@ a{
     padding: 4rem 0 3.35rem 0;
     border: 1px solid rgb(222, 245, 255);
     border-radius: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+ .card-1:hover{
+    transform: scale(1.05);
+    background-color: rgb(222, 245, 255);
 }
 .card-2{
     background: linear-gradient(rgb(255, 244, 220), rgba(255, 255, 255, 0), white);
@@ -177,6 +205,12 @@ a{
     padding: 4rem 0 3.35rem 0;
     border: 1px solid rgb(255, 244, 220);
     border-radius: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+ .card-2:hover{
+    transform: scale(1.05);
+    background-color: rgb(255, 244, 220);
 }
 .card-3{
     background: linear-gradient(rgb(242, 232, 255), rgba(255, 255, 255, 0), white);
@@ -184,6 +218,12 @@ a{
     padding: 4rem 0 3.35rem 0;
     border: 1px solid rgb(242, 232, 255);
     border-radius: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+ .card-3:hover{
+    transform: scale(1.05);
+    background-color: rgb(242, 232, 255);
 }
 .card-title, .card-description{
     margin-top: 2rem;
@@ -200,7 +240,7 @@ a{
     font-size: 1.5rem;
     border-radius: 30px;
     background: rgb(254, 163, 1);
-    transition: 0.03s;
+    transition: 0.1s;
     cursor: pointer;
 }
 .icon:hover{
@@ -229,6 +269,9 @@ a{
 }
 .stories-card-1,.stories-card-2, .stories-card-3,.stories-card-4 {
     width: 291px;
+}
+.img-container> img{
+    width: 100%;
 }
 .story-img-radius{
     border-radius: 16px 16px 0 0;
@@ -260,30 +303,48 @@ a{
     left: 8%;
     color: white;
     background-color: rgb(60, 216, 232);
+    transition: 0.3s;
+    cursor: pointer;
 }
-.card-btn-1, .card-btn-2, .card-btn-3, .card-btn-3, .card-btn-4 {
+.card-btn:hover{
+    background-color: rgb(40, 158, 190);
+}
+.card-btn-1, .card-btn-2, .card-btn-3, .card-btn-4 {
     position: absolute;
     top: 55%;
     left: 15%;
     color: white;
+    transition: 0.3s;
+    cursor: pointer;
 }
 .card-btn-1{
     background-color: rgb(149, 178, 38);
 }
+ .card-btn-1:hover{
+    background-color: rgb(75, 102, 7);
+}
 .card-btn-2{
     background-color: rgb(93, 88, 240);
 }
+.card-btn-2:hover{
+    background-color: rgb(29, 24, 164);
+}
 .card-btn-3{
-    background-color: rgb(149, 178, 38);
+    background-color: rgb(254, 163, 1);
+}
+.card-btn-3:hover{
+    background-color: rgb(115, 74, 9);
 }
 .card-btn-4{
-    background-color: rgb(149, 178, 38);
+    background-color: rgb(1, 172, 253);
     border: none;
     border-radius: 48px;
     padding: 15px 20px;
     width: 125px;
 }
-
+.card-btn-4:hover{
+    background-color: rgb(100, 64, 3);
+}
 /* footer styles */
 
 footer{
@@ -321,6 +382,7 @@ footer{
     .big-card{
         display: none;
     }
+
     /* navbar */
 
     #hamburger{
@@ -355,7 +417,7 @@ footer{
         font-size: 1rem;
     }
     .hero-image{
-        height: 100%;
+        width: 100%;
     }
 
     /* standard */
@@ -381,22 +443,22 @@ footer{
         padding-top: 40px 0;
     }
     .cards-container{
-        padding: 20px 16px;
+        margin: 1.25rem 1rem;
     }
     .stories-cards-container{
         grid-template-columns: repeat(2, 1fr);
         gap: .75rem;
     }
     .img-container> img{
-        width: 257px;
+        width: 100%;
     }
     .stories-card-title{
-        font-size: 1rem;
-        padding: 1.5rem;
+        font-size: 16px;
+        padding: 20px;
         margin-top: 15px;
     }
     .stories-card-1,.stories-card-2,.stories-card-3,.stories-card-4 {
-        width: 257px;
+        width: 100%;
     }
     .img-container{
         position: relative;
@@ -404,8 +466,8 @@ footer{
     .card-btn-1, .card-btn-2, .card-btn-3, .card-btn-3, .card-btn-4 {
         padding: 12px;
         position: absolute;
-        top: 56%;
-        left: 12%;
+        top: 52%;
+        left: 8%;
         color: white;
     }
 
@@ -419,5 +481,42 @@ footer{
     .social-container> a{
         margin-right: 1rem;
     }
+}
 
+@media screen and (max-width:445px) {
+    .card-btn-1, .card-btn-2, .card-btn-3{
+        width: 150px;
+        padding: 6px;
+        position: absolute;
+        left: 10%;
+    }
+    .card-btn-1, .card-btn-2{
+        top: 44%;
+    }
+    .card-btn-3{
+        top: 42%;       
+    }
+    .card-btn-4{
+        width: 120px;
+        padding: 6px;
+        position: absolute;
+        top: 45%;
+        left: 10%;    
+    }
+}
+@media screen and (max-width:400px) {
+    .card-btn-1, .card-btn-2, .card-btn-3{
+        width: 140px;
+        padding: 6px;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+    .card-btn-4{
+        width: 100px;
+        padding: 6px;
+        position: absolute;
+        top: 40%;
+        left: 10%;    
+    }
 }
